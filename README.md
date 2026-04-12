@@ -58,12 +58,11 @@ The deployment follows a clean pipeline:
 ```
 ├── terraform/
 │   ├── main.tf
-│   ├── variables.tf
-│   ├── vpc.tf
-│   ├── eks.tf
+│   ├── instance-amis.txt
 ├── k8s/
 │   ├── deployment.yaml
-│   ├── serivce.yaml
+│   ├── service.yaml
+│   ├── hpa.yaml
 └── README.md
 ```
 
