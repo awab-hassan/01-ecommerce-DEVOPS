@@ -8,6 +8,23 @@ terraform {
 
 data "aws_availability_zones" "azs" {}
 
+module "ecr" {
+  source  = "terraform-aws-modules/ecr/aws"
+  version = "1.6.0"
+
+  repository_name = "java-ecom"
+
+  repository_image_scan_on_push = true
+
+  repository_encryption_type = "AES256"
+
+  repository_force_delete = true
+
+  tags = {
+    Name = "java-ecom"
+  }
+}
+
 module "my_vpc"{
   source  = "terraform-aws-modules/vpc/aws"
   version = "3.18.1"
