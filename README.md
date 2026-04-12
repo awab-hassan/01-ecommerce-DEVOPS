@@ -63,6 +63,7 @@ The deployment follows a clean pipeline:
 │   ├── eks.tf
 ├── k8s/
 │   ├── deployment.yaml
+│   ├── serivce.yaml
 └── README.md
 ```
 
