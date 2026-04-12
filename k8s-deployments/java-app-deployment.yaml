@@ -22,16 +22,3 @@ spec:
         resources:
           requests:
             cpu: 500m
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: java-app
-spec:
-  selector:
-    app: java-app
-  type: LoadBalancer
-  ports:
-  - protocol: TCP
-    targetPort: 8999
-    port: 8999
