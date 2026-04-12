@@ -36,11 +36,11 @@ The deployment follows a clean pipeline:
 ## What Was Built
 
 **1. Dockerized the Java application**
-- Wrote a multi-stage `Dockerfile` to build and package the Spring Boot app
+- Wrote a `Dockerfile` to build and package the Spring Boot app
 - Pushed the image to Amazon ECR
 
 **2. Provisioned EKS cluster with Terraform**
-- Created VPC, subnets, and IAM roles using Terraform modules
+- Created VPC, subnets (public/private), and IAM roles using Terraform modules
 - Deployed a managed EKS cluster with worker node groups
 
 **3. Deployed application on EKS**
@@ -61,13 +61,8 @@ The deployment follows a clean pipeline:
 │   ├── variables.tf
 │   ├── vpc.tf
 │   ├── eks.tf
-│   └── rds.tf
 ├── k8s/
 │   ├── deployment.yaml
-│   ├── service.yaml
-│   ├── hpa.yaml
-│   └── secret.yaml
-├── Dockerfile
 └── README.md
 ```
 
