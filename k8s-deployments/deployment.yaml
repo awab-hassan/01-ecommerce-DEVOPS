@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: java-app
-        image: public.ecr.aws/d4j3z9t2/e-commerce
+        image: ecr.aws/d4j3z9t2/e-commerce
         ports:
         - containerPort: 8999
         resources:
