@@ -1,4 +1,4 @@
-# E-Commerce Application Deployment on AWS EKS
+# E-Commerce Application Deployment on AWS EKS.
 
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
